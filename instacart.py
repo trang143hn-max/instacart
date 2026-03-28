@@ -12,8 +12,7 @@ products = pd.read_csv(base_path + r"\products.csv")
 aisles = pd.read_csv(base_path + r"\aisles.csv")
 departments = pd.read_csv(base_path + r"\departments.csv")
 
-# -------------------------------
-# 3. Chỉ merge các cột cần thiết để tiết kiệm RAM
+
 orders_small = orders[['order_id', 'order_dow', 'order_hour_of_day']]
 products_small = products[['product_id',
                            'product_name', 'aisle_id', 'department_id']]
